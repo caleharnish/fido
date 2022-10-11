@@ -26,14 +26,12 @@ from spack import *
 class Fido(CMakePackage):
     """Finite Difference Optimizer"""
 
-    homepage = "https://github.com/lanl/fido"
-    git      = "https://github.com/lanl/fido.git"
+    homepage = "https://github.com/caleharnish/fido"
+    git      = "https://github.com/caleharnish/fido.git"
 
-    maintainers = ['pbrady']
+    maintainers = ['pbrady','caleharnish']
 
     version('develop', branch='main')
-    version('2022-05', commit='ea0a582a1fc606641ed374c43e7fc99eb18d0c31')
-    version('2022-04', commit='4c75304feb463fc4c0a66015edfb613455cc67bc')
 
     depends_on("shoccs")
     depends_on("nlopt ~python")

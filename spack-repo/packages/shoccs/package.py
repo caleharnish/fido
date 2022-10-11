@@ -26,14 +26,12 @@ from spack import *
 class Shoccs(CMakePackage):
     """Stable High-Order Cut-Cell Solver"""
 
-    homepage = "https://github.com/lanl/shoccs"
-    git      = "https://github.com/lanl/shoccs.git"
+    homepage = "https://github.com/caleharnish/shoccs"
+    git      = "https://github.com/caleharnish/shoccs.git"
 
-    maintainers = ['pbrady']
+    maintainers = ['pbrady','caleharnish']
 
     version('develop', branch='main')
-    version('2022-04', commit='90f7ad1277e7e746ee506b33f530b016240b094e', preferred=True)
-    version('2022-02', commit='2203cab4e2bc69e365f6f8a780a47ac33d3108fa')
 
     depends_on('lua-sol2')
     depends_on('cmake@3.16:')
