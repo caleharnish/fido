@@ -22,7 +22,7 @@ target_link_libraries(lua INTERFACE ${LUA_LIBRARIES})
 find_package(NLopt REQUIRED)
 find_package(fmt 8 REQUIRED)
 find_package(Legion REQUIRED)
-
+find_package(lapackpp REQUIRED)
 find_package(shoccs REQUIRED)
 find_package(sol2 REQUIRED)
 
