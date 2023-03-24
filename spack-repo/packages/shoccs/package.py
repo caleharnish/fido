@@ -32,16 +32,14 @@ class Shoccs(CMakePackage):
     maintainers = ['pbrady','caleharnish']
 
     version('develop', branch='main')
-    version('2023-03', commit='ea1ef2dc1c7656fe5b685a355ec4e771318c063f', preferred=True)
-    version('2022-04', commit='90f7ad1277e7e746ee506b33f530b016240b094e')
-    version('2022-02', commit='2203cab4e2bc69e365f6f8a780a47ac33d3108fa')
+    version('2023-03', commit='bac64635737ad7dec10a2faf3ea5dd38cdb3099d', preferred=True)
 
     depends_on('lua-sol2')
     depends_on('cmake@3.16:')
     depends_on('range-v3@0.11:')
     depends_on('pugixml')
     depends_on('fmt@8:')
-    depends_on('spdlog@1.9: +fmt_external')
+    depends_on('spdlog@1.9:')
     depends_on('cxxopts@3:')
     depends_on('boost cxxstd=2a')
     depends_on('lapackpp')

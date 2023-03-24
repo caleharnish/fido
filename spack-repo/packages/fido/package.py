@@ -32,6 +32,7 @@ class Fido(CMakePackage):
     maintainers = ['pbrady','caleharnish']
 
     version('develop', branch='main')
+    version('2023-03', commit='59e3e63c631db4b3f30eee976d1e1ce3e712cd9b', preferred=True)
 
     depends_on("shoccs")
     depends_on("nlopt ~python")
