@@ -32,7 +32,9 @@ class Shoccs(CMakePackage):
     maintainers = ['pbrady','caleharnish']
 
     version('develop', branch='main')
-    version('2023-03', commit='bac64635737ad7dec10a2faf3ea5dd38cdb3099d', preferred=True)
+    version('2023-04', commit='521427e82a21bcb57b41e1fa1eb53efc744fe292', preferred=True)
+    version('2023-03', commit='bac64635737ad7dec10a2faf3ea5dd38cdb3099d')
+
 
     depends_on('lua-sol2')
     depends_on('cmake@3.16:')
