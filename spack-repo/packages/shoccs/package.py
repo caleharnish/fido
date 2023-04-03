@@ -39,7 +39,7 @@ class Shoccs(CMakePackage):
     depends_on('range-v3@0.11:')
     depends_on('pugixml')
     depends_on('fmt@8:')
-    depends_on('spdlog@1.9:')
+    depends_on('spdlog@1.9: +fmt_external')
     depends_on('cxxopts@3:')
     depends_on('boost cxxstd=2a')
     depends_on('lapackpp')
